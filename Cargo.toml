@@ -1,0 +1,17 @@
+[package]
+name = "rustbee"
+version = "0.1.0"
+authors = ["duysqubix <duys@qubixat.com>"]
+edition = "2018"
+license = "MIT"
+description = "Rust library to interact with Xbee Devices"
+repository = "https://github.com/duysqubix/rustbee.git"
+readme = "README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serialport = "^3.3"
+bytes = "^0.5"
+lazy_static = "^1.4"
+rand = "^0.7"
