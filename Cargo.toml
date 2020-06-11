@@ -13,5 +13,6 @@ readme = "README.md"
 [dependencies]
 serialport = "^3.3"
 bytes = "^0.5"
+byteorder = "^1"
 lazy_static = "^1.4"
 rand = "^0.7"
