@@ -1,5 +1,4 @@
-# ![rustbee_logo][logo] 
-# Rustbee
+# Rustbee *an Xbee Rust Library*
 [![Build Status][travisimg]][travislink] [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) 
 
 
@@ -24,7 +23,7 @@ the following API frames are supported:
 
 ## Contributions
 Hopefully if this gets large enough, Digidotcom will take notice and help with official support, but until then it would be greatly appreciated to ask for help from the
-community to add to this project and create a usable and stable Rust API for XBee devices.
+community to add to this project and create a usable and stable Rust API for XBee devices. Also do checkout [CONTRIBUTE.md][contribute]
 
 Any questions or information, we welcome you at our [discord][discord] server. Come on by.
 
@@ -35,8 +34,8 @@ Any questions or information, we welcome you at our [discord][discord] server. C
 * Possbily make this async safe? Right now implementation is all sync.
 
 
-[logo]: https://github.com/duysqubix/MuOxi/blob/master/.media/cog.png
 [travisimg]: https://travis-ci.org/duysqubix/rustbee.svg?branch=master
 [travislink]: https://travis-ci.org/duysqubix/rustbee
 [discord]: https://discord.gg/6arV5Es
 [digicom]: https://github.com/digidotcom
+[contribute]: https://github.com/rustbee/blob/master/CONTRIBUTING.md
