@@ -12,8 +12,7 @@ static PORT: &'static str = "/dev/ttyUSB0";
 #[cfg(target_os = "windows")]
 static PORT: &'static str = "COM1";
 
-static NODE_ID: &'static str = b"MY_NODE";
-static DEST_ADDR: u64 = 0xabcdef01010203040506;
+static DEST_ADDR: u64 = 0xabcdef0101020304;
 
 fn main() -> Result<(), Box<dyn error::Error>> {
     // first create instance of device
@@ -25,7 +24,7 @@ fn main() -> Result<(), Box<dyn error::Error>> {
             apply_changes: true,
         },
         atcmd: "ID",
-        cmd_param: Some(0x7fff), // change all devices on same ID to a new ID (0x7fff)
+        cmd_param: Some(b"\x7f\xff"), // change all devices on same ID to a new ID (0x7fff)
     };
 
     let _ = device.send_frame(set_all_id)?;
@@ -42,7 +41,7 @@ fn main() -> Result<(), Box<dyn error::Error>> {
     let response = device.send_frame(get_all_id)?;
 
     if let Some(resp) = response.downcast_ref::<api::RemoteAtCommandResponse>() {
-        println!("{:?}", r.command_data);
+        println!("{:?}", resp.command_data);
     }
 
     Ok(())

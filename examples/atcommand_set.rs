@@ -13,14 +13,14 @@ static PORT: &'static str = "/dev/ttyUSB0";
 #[cfg(target_os = "windows")]
 static PORT: &'static str = "COM1";
 
-static NODE_ID: &'static str = b"MY_NODE";
+static NODE_ID: &'static str = "MY_NODE";
 
 fn main() -> Result<(), Box<dyn error::Error>> {
     // first create instance of device
     let mut device = DigiMeshDevice::new(PORT, 9600)?;
 
     // Construct At command and set node_id of device by supplying valid [u8] but None
-    let _ = api::AtCommandFrame("NI", Some(NODE_ID));
+    let _ = api::AtCommandFrame("NI", Some(NODE_ID.as_bytes()));
 
     // Now query new node_id
     let new_node_id = api::AtCommandFrame("NI", None);
