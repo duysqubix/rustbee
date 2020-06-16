@@ -39,3 +39,4 @@ Any questions or information, we welcome you at our [discord][discord] server. C
 [discord]: https://discord.gg/6arV5Es
 [digicom]: https://github.com/digidotcom
 [contribute]: https://github.com/rustbee/blob/master/CONTRIBUTING.md
+[src_examples]: https://github.com/rustbee/blob/master/examples
