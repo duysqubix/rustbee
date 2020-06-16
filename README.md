@@ -38,4 +38,5 @@ Any questions or information, we welcome you at our [discord][discord] server. C
 [travislink]: https://travis-ci.org/duysqubix/rustbee
 [discord]: https://discord.gg/6arV5Es
 [digicom]: https://github.com/digidotcom
-[contribute]: https://github.com/rustbee/blob/master/CONTRIBUTING.md
+[contribute]: https://github.com/duysqubix/rustbee/blob/master/CONTRIBUTING.md
+[src_examples]: https://github.com/duysqubix/rustbee/tree/master/examples
